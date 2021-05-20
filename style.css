@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(26,42,55);;
 }
 
 .wrapper {
@@ -8,17 +9,11 @@ body {
     grid-column: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "top-section top-section animation animation";
-    background: rgb(26,42,55);
     background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
     color: white;
-    animation: background 3s infinite; 
+   
 }
-@keyframes background {
-    0% {  background: rgb(26,42,55);
-        background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);}
-    100% { background: rgb(26,42,55);
-        background: linear-gradient(94deg, rgba(102,112,121,1 ) 0%, rgba(26,42,55,1) 100%);}
-}
+
 
 .name {
     font-size: 600%;
@@ -34,7 +29,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: #87DFFF;
-    margin-top: -4.5%;
+    margin-top: -20.5%;
     margin-bottom: -1%;
 }
 
@@ -59,6 +54,7 @@ hr {
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
 
 .career {
     color: white;
@@ -87,11 +83,13 @@ hr {
     background-color: #1A2A37;
     position: fixed;
     width: 100%;
+   
 }
 
 .header {
     grid-area: header;
     margin-left: 6%;
+   
 }
 
 .nav {
@@ -141,7 +139,6 @@ li a {
     "projects-header projects-header projects-header"
     "aleft main aright"
     ". button .";
-    background: rgb(26,42,55);
     background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
     margin:auto;
     text-align: center;
@@ -191,7 +188,6 @@ li a {
 #about-wrapper {
     display: grid;
     grid-column:  1fr 1fr 1fr;
-    background: rgb(26,42,55);
 background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
 grid-template-areas: 
 "picofme bodytext bodytext";
@@ -213,6 +209,7 @@ grid-template-areas:
     margin-left: 10%;
     border: 2px solid #FF87D2;
     border-radius: 300px;
+    height:468px;
 }
 
 .bodytext {
@@ -272,7 +269,10 @@ grid-template-areas:
 .linkedinlogo {
     grid-area: linkedinlogo;
     margin-top: 5%;
-    
+    width:30px;
 
 }
 
+body *{
+    border: 2px solid green;
+}
