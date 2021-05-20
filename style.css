@@ -11,41 +11,60 @@ body {
     background: rgb(26,42,55);
     background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
     color: white;
-    
-    
+    animation: background 3s infinite; 
 }
+@keyframes background {
+    0% {  background: rgb(26,42,55);
+        background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);}
+    100% { background: rgb(26,42,55);
+        background: linear-gradient(94deg, rgba(102,112,121,1 ) 0%, rgba(26,42,55,1) 100%);}
+}
+
 .name {
-    font-size: 500%;
-    margin-top:-5%;
+    font-size: 600%;
+    margin-top:-1%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     margin-bottom: 5%;
+    
   
+}
+.intro_text {
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #87DFFF;
+    margin-top: -4.5%;
+    margin-bottom: -1%;
 }
 
 .portfolio {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: pink;
     margin-top: -4.5%;
+    margin-bottom: 2%;
 }
 
 hr {
     background-color: #87DFFF;
     width: 55%;
     float: left;
+    border: 3px solid #87DFFF;
 }
 
 .menubar-name {
  color: white;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .career {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+    font-size: 150%;
 }
 
 .start {
@@ -112,25 +131,26 @@ li a {
     float: right;
 }
 
-body *{
-    border: 2px solid pink;
-}
+
 
 .project-wrapper {
     
     display: grid;
-    grid-column: 2% 1fr 1fr 1fr 2%;
+    grid-column: 1fr 1fr 1fr;
     grid-template-areas: 
-    ". projects-header projects-header projects-header ."
-    ". aleft main aright ."
-    ". . button . .";
+    "projects-header projects-header projects-header"
+    "aleft main aright"
+    ". button .";
     background: rgb(26,42,55);
     background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
+    margin:auto;
+    text-align: center;
 
 }
 
 .project-aleft {
     grid-area: aleft;
+    margin-left: 8%;
 }
 
 .project-main {
@@ -139,13 +159,16 @@ body *{
 
 .project-aright {
     grid-area: aright;
+    margin-right: 8%;
 }
 
-.projects {
+.header_text {
     grid-area: projects-header;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    font-weight: 400;
+    font-size: 200%;
 }
 
 .button {
@@ -159,7 +182,97 @@ body *{
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     
 }
+
+#about-wrapper {
+    display: grid;
+    grid-column:  1fr 1fr 1fr;
+    background: rgb(26,42,55);
+background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+grid-template-areas: 
+"picofme bodytext bodytext";
+
+}
+
+.header_aboutme {
+    color: white;
+    margin-top: 15%;
+    margin-right: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+.imageofme {
+    grid-area: picofme;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    border: 2px solid #FF87D2;
+    border-radius: 300px;
+}
+
+.bodytext {
+    margin-left: 10%;
+    grid-area: bodytext;
+
+}
+
+.aboutmetext {
+    color: white;
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contactinfo {
+    color: #FF87D2;
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5%;
+}
+
+.footer {
+   display: grid;   
+    background: rgb(26,42,55);
+    grid-column: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contact email phonenumber linkedin linkedinlogo";
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contact {
+    grid-area: contact;
+    margin-left: 80px;
+}
+
+.email {
+    grid-area: email;
+    
+}
+
+.phonenumber {
+    grid-area: phonenumber;
+    
+}
+
+
+
+.linkedintext {
+    grid-area: linkedin;
+    float: right;
+  
+}
+
+.linkedinlogo {
+    grid-area: linkedinlogo;
+    margin-top: 5%;
+    
+
+}
+
