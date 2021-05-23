@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header-nav-wrapper {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-areas: 
+    "header nav";
+    background-color: #1A2A37;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+   
+}
+a {
+    text-decoration: none;
+
+}
+
+.header {
+    grid-area: header;
+    margin-left: 6%;
+   
+}
+.menubar-name {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+   }
+.nav {
+    grid-area: nav;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: right;
+    margin-right: 5%;
+    margin-top: 1.7%;
+}
+li a {
+    font-size: 15;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li a:hover {
+    margin-top: 1.7%;
+    border-bottom: 2px solid #87DFFF;
+}
+
+#about-wrapper {
+    display: grid;
+    grid-column:  1fr 1fr 1fr;
+background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+grid-template-areas: 
+"picofme bodytext bodytext";
+
+}
+
+#project-wrapper {
+    
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". projects-header ." 
+    "project-left uxui-main illustrator-left"
+    "three-left project-main project-right"
+    ". button .";
+    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
+    margin:auto;
+    text-align: center;
+    padding: 0% 10% 5% 10%;
+
+}
+
+.project-left {
+    background: url("pics/trapholt.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: project-left;
+  
+    margin-left: -20%;
+    margin-right: -8%;
+    margin-bottom: 6%;
+
+   
+}
+
+.uxui-main {
+    background: url("pics/fuglebjerregaard.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: uxui-main;
+    background-color: black;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 4%;
+}
+
+.illustrator-left {
+    background: url("pics/illustrator.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+ 
+    grid-area: illustrator-left;
+    margin-left: -8%;
+    margin-right: -20%;
+    margin-bottom: 6%;
+    background-color: black;
+}
+
+
+.threed-left {
+    background: url("pics/tukan.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: three-left;
+    margin-left: -20%;
+    margin-right: -8%;
+    background-color: black;
+}
+.project-main {
+    background: url("pics/riverboat.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: project-main;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: black;
+}
+
+.project-right {
+    background: url("pics/forfulgt.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: project-right;
+    margin-left: -8%;
+    margin-right: -20%;
+    background-color: black;
+    
+}
+.header_text {
+    grid-area: projects-header;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 200%;
+    
+}
+
+
+.images {
+    width: 100%;
+    height: 100%;
+
+
+}
+.header_text {
+    grid-area: projects-header;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 200%;
+}

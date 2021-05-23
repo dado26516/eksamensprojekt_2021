@@ -1,9 +1,14 @@
+
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(26,42,55);;
 }
 
+a {
+    text-decoration: none;
+    
+}
 .wrapper {
     display: grid;
     grid-column: 1fr 1fr 1fr 1fr;
@@ -11,19 +16,21 @@ body {
     "top-section top-section animation animation";
     background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
     color: white;
-   
+    width: 100%;
+    margin: 0;
+
 }
 
 
 .name {
-    font-size: 600%;
+    font-size: 500%;
     margin-top:-1%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     margin-bottom: 5%;
-    
-  
+    width: 500px;
 }
+
 .intro_text {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,14 +44,14 @@ body {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    color: pink;
+    color: #FF87D2;
     margin-top: -4.5%;
     margin-bottom: 2%;
 }
 
 hr {
     background-color: #87DFFF;
-    width: 55%;
+    width: 97%;
     float: left;
     border: 3px solid #87DFFF;
 }
@@ -66,11 +73,20 @@ hr {
 .start {
     grid-area: top-section;
     margin-left: 8.0%;
-    margin-top: 55%;
+    margin-top: 65%;
+ 
 }
 
 .animation {
     grid-area: animation;
+
+
+
+}
+.gitter {
+    
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -83,6 +99,7 @@ hr {
     background-color: #1A2A37;
     position: fixed;
     width: 100%;
+    z-index: 1;
    
 }
 
@@ -109,8 +126,7 @@ ul {
 li {
     float: right;
     margin-right: 5%;
-    margin-top: 1%;
-
+    margin-top: 1.7%;
 }
 li a {
     font-size: 15;
@@ -120,9 +136,12 @@ li a {
     color: white;
     padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
+li a:hover {
+    margin-top: 1.7%;
+    border-bottom: 2px solid #87DFFF;
+}
 .landingpage_pic{
     height: 100%;
     width: 100vh;
@@ -131,34 +150,88 @@ li a {
 
 
 
-.project-wrapper {
+#project-wrapper {
     
     display: grid;
     grid-column: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "projects-header projects-header projects-header"
-    "aleft main aright"
+    grid-template-areas:
+    ". projects-header ." 
+    "project-left uxui-main illustrator-left"
+    "three-left project-main project-right"
     ". button .";
     background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
     margin:auto;
     text-align: center;
+    padding: 0% 10% 5% 10%;
 
 }
 
-.project-aleft {
-    grid-area: aleft;
+.project-left {
+    background: url("pics/trapholt.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: project-left;
+  
+    margin-left: -20%;
+    margin-right: -8%;
+    margin-bottom: 6%;
+
+   
+}
+
+.uxui-main {
+    background: url("pics/fuglebjerregaard.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: uxui-main;
+    background-color: black;
     margin-left: 8%;
-}
-
-.project-main {
-    grid-area: main;
-}
-
-.project-aright {
-    grid-area: aright;
     margin-right: 8%;
+    margin-bottom: 4%;
 }
 
+.illustrator-left {
+    background: url("pics/illustrator.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+ 
+    grid-area: illustrator-left;
+    margin-left: -8%;
+    margin-right: -20%;
+    margin-bottom: 6%;
+    background-color: black;
+}
+
+
+.threed-left {
+    background: url("pics/tukan.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: three-left;
+    margin-left: -20%;
+    margin-right: -8%;
+    background-color: black;
+}
+.project-main {
+    background: url("pics/riverboat.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: project-main;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: black;
+}
+
+.project-right {
+    background: url("pics/forfulgt.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-area: project-right;
+    margin-left: -8%;
+    margin-right: -20%;
+    background-color: black;
+    
+}
 .header_text {
     grid-area: projects-header;
     text-align: center;
@@ -166,7 +239,9 @@ li a {
     color: white;
     font-weight: 400;
     font-size: 200%;
+    
 }
+
 
 .button {
     grid-area: button;
@@ -235,9 +310,9 @@ grid-template-areas:
 .footer {
    display: grid;   
     background: rgb(26,42,55);
-    grid-column: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "contact email phonenumber linkedin linkedinlogo";
+    "contact email linkedin linkedinlogo";
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -273,6 +348,666 @@ grid-template-areas:
 
 }
 
-body *{
-    border: 2px solid green;
+.images {
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+
+}
+
+.images:hover {
+    transition: 0.5s;
+    opacity: 100%;
+} 
+
+/*ipad pro størrelse------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        display: grid;
+        grid-column: 1fr;
+        grid-template-areas: 
+        "top-section" "animation";
+        background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+        color: white;
+        width: 100%;
+        margin: 0;
+    
+    }
+    .header-nav-wrapper {
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-template-areas: 
+        "header nav";
+        background-color: #1A2A37;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+       
+    }
+    #project-wrapper {
+    
+        display: grid;
+        grid-column: 1fr 1fr 1fr;
+        grid-template-areas:
+        "projects-header" 
+        "project-left"
+        "uxui-main"
+        "illustrator-left"
+        "three-left"
+        "project-main"
+        "project-right";
+       
+        background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
+        margin:auto;
+        text-align: center;
+        padding: 0% 10% 5% 10%;
+    
+    }
+    #about-wrapper {
+        display: grid;
+        grid-column:  1fr;
+    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+    grid-template-areas: 
+    "picofme" "bodytext";
+    
+    }
+    .project-left {
+        background: url("pics/trapholt.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: project-left;
+      
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6%;
+    
+       
+    }
+    
+    .uxui-main {
+        background: url("pics/fuglebjerregaard.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: uxui-main;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%;
+    }
+    
+    .illustrator-left {
+        background: url("pics/illustrator.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+     
+        grid-area: illustrator-left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6%;
+        background-color: black;
+    }
+    
+    
+    .threed-left {
+        background: url("pics/tukan.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: three-left;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
+    .project-main {
+        background: url("pics/riverboat.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: project-main;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
+    
+    .project-right {
+        background: url("pics/forfulgt.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: project-right;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        
+    }
+
+    #about-wrapper {
+        display: grid;
+        grid-column:  1fr 1fr 1fr;
+    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+    grid-template-areas: 
+    "picofme" "bodytext";
+    text-align: auto;
+    
+    }
+
+    .header_aboutme {
+        color: white;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 200%;
+     
+    }
+    .imageofme {
+        grid-area: picofme;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 26%;
+        
+        border: 2px solid #FF87D2;
+        border-radius: 300px;
+        height:468px;
+    }
+    
+    .bodytext {
+        margin-left: 1%;
+        grid-area: bodytext;
+        text-align: center;
+        margin-top: -15%;
+        margin-bottom: 10%;
+    
+    }
+    
+    .aboutmetext {
+        color: white;
+        font-size: 150%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .linkedinlogo {
+        grid-area: linkedinlogo;
+        margin-top: 10.5%;
+        width:30px;
+    
+    }
+}
+/*ipad størrelse--------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-column: 1fr;
+        grid-template-areas: 
+        "top-section" "animation";
+        background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+        color: white;
+        width: 100%;
+        margin: 0;
+    
+    }
+    .header-nav-wrapper {
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-template-areas: 
+        "header nav";
+        background-color: #1A2A37;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+       
+    }
+    #project-wrapper {
+    
+        display: grid;
+        grid-column: 1fr 1fr 1fr;
+        grid-template-areas:
+        "projects-header" 
+        "project-left"
+        "uxui-main"
+        "illustrator-left"
+        "three-left"
+        "project-main"
+        "project-right";
+       
+        background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
+        margin:auto;
+        text-align: center;
+        padding: 0% 10% 5% 10%;
+    
+    }
+    #about-wrapper {
+        display: grid;
+        grid-column:  1fr;
+    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+    grid-template-areas: 
+    "picofme" "bodytext";
+    
+    }
+    .project-left {
+        background: url("pics/trapholt.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: project-left;
+      
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6%;
+    
+       
+    }
+    
+    .uxui-main {
+        background: url("pics/fuglebjerregaard.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: uxui-main;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%;
+    }
+    
+    .illustrator-left {
+        background: url("pics/illustrator.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+     
+        grid-area: illustrator-left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6%;
+        background-color: black;
+    }
+    
+    
+    .threed-left {
+        background: url("pics/tukan.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: three-left;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
+    .project-main {
+        background: url("pics/riverboat.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: project-main;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
+    
+    .project-right {
+        background: url("pics/forfulgt.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        grid-area: project-right;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        
+    }
+
+    #about-wrapper {
+        display: grid;
+        grid-column:  1fr 1fr 1fr;
+    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+    grid-template-areas: 
+    "picofme" "bodytext";
+    text-align: auto;
+    
+    }
+
+    .header_aboutme {
+        color: white;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 200%;
+     
+    }
+    .imageofme {
+        grid-area: picofme;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 19%;
+        
+        border: 2px solid #FF87D2;
+        border-radius: 300px;
+        height:468px;
+    }
+    
+    .bodytext {
+        margin-left: 1%;
+        grid-area: bodytext;
+        text-align: center;
+        margin-top: -15%;
+        margin-bottom: 10%;
+    
+    }
+    
+    .aboutmetext {
+        color: white;
+        font-size: 120%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .linkedinlogo {
+        grid-area: linkedinlogo;
+        margin-top: 10.5%;
+        width:30px;
+    
+    }
+    
+}
+
+
+
+/* phone størrelse-----------------*/
+@media screen and (max-width: 480px) {
+        .wrapper {
+            display: grid;
+            grid-column: 1fr;
+            grid-template-areas: 
+            "top-section" "animation";
+            background: linear-gradient(94deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+            color: white;
+            width: 100%;
+            margin: 0;
+        
+        }
+        .header-nav-wrapper {
+            display: grid;
+            grid-column: 1fr;
+            grid-template-areas: 
+            "header" "nav";
+            background-color: #1A2A37;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+           
+        }
+        #project-wrapper {
+        
+            display: grid;
+            grid-column: 1fr 1fr 1fr;
+            grid-template-areas:
+            "projects-header" 
+            "project-left"
+            "uxui-main"
+            "illustrator-left"
+            "three-left"
+            "project-main"
+            "project-right";
+           
+            background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
+            margin:auto;
+            text-align: center;
+            padding: 0% 10% 5% 10%;
+        
+        }
+
+        #about-wrapper {
+            display: grid;
+            grid-column:  1fr;
+        background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+        grid-template-areas: 
+        "picofme" "bodytext";
+        
+        }
+
+
+        .project-left {
+            background: url("pics/trapholt.png");
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            grid-area: project-left;
+          
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 6%;
+        }
+        
+        .uxui-main {
+            background: url("pics/fuglebjerregaard.png");
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            grid-area: uxui-main;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+        }
+        
+        .illustrator-left {
+            background: url("pics/illustrator.png");
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+         
+            grid-area: illustrator-left;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 6%;
+            background-color: black;
+        }
+        
+        
+        .threed-left {
+            background: url("pics/tukan.png");
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            grid-area: three-left;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+        }
+
+        .project-main {
+            background: url("pics/riverboat.png");
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            grid-area: project-main;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+        }
+        
+        .project-right {
+            background: url("pics/forfulgt.png");
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            grid-area: project-right;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+            
+        }
+    
+        #about-wrapper {
+            display: grid;
+            grid-column:  1fr 1fr 1fr;
+            background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+            grid-template-areas: 
+            "picofme" "bodytext";
+            text-align: auto;
+        
+        }
+    
+        .header_aboutme {
+            color: white;
+            margin-top: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 200%;
+         
+        }
+        .imageofme {
+            grid-area: picofme;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-left: 19%;
+            
+            border: 2px solid #FF87D2;
+            border-radius: 300px;
+            height:250px;
+        }
+        
+        .bodytext {
+            margin-left: 1%;
+            grid-area: bodytext;
+            text-align: center;
+            margin-top: -15%;
+            margin-bottom: 10%;
+        
+        }
+        
+        .aboutmetext {
+            color: white;
+            font-size: 120%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+        .linkedinlogo {
+            grid-area: linkedinlogo;
+            margin-top: 10.5%;
+            width:30px;
+        
+        }
+        .name {
+            font-size: 200%;
+            margin-top:-1%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            margin-bottom: 5%;
+            width: 100%;
+        }
+        
+        .intro_text {
+            font-size: 150%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #87DFFF;
+            margin-top: -20.5%;
+            margin-bottom: -1%;
+        }
+        
+        .portfolio {
+            font-size: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: #FF87D2;
+            margin-top: -4.5%;
+            margin-bottom: 2%;
+        }
+        
+        hr {
+            background-color: #87DFFF;
+            width: 50%;
+            float: left;
+            border: 3px solid #87DFFF;
+        }
+        
+        .menubar-name {
+         color: white;
+         text-align: center;
+     margin-right: 7%;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        
+        .career {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 80%;
+        }
+
+
+    ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: 13%;
+
+}
+
+li {
+    float: right;
+    margin-right: 5%;
+    margin-top: 1.7%;
+}
+li a {
+    font-size: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    display: grid;   
+     background: rgb(26,42,55);
+     grid-column: 1fr 1fr;
+     grid-template-areas: 
+     "contact contact" "email email" "linkedin linkedinlogo";
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+ }
+ .bodytext {
+    margin-left: 1%;
+    grid-area: bodytext;
+    text-align: center;
+    margin-top: -15%;
+    margin-bottom: 10%;
+
+}
+.aboutmetext {
+    color: white;
+    font-size: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.contact {
+    grid-area: contact;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.email {
+    grid-area: email;
+    text-align: center;
+}
+
+.phonenumber {
+    grid-area: phonenumber;
+    text-align: center;
+}
+
+.linkedintext {
+    grid-area: linkedin;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.linkedinlogo {
+    grid-area: linkedinlogo;
+    margin-top: 7%;
+    margin-right: 15%;
+    width:30px;
+
+}
+.contactinfo {
+    font-size: 100%;
+}
 }
