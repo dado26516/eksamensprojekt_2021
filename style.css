@@ -208,6 +208,7 @@ li a:hover {
     background-repeat:no-repeat;
     background-size: 100% 100%;
     grid-area: three-left;
+    
     margin-left: -20%;
     margin-right: -8%;
     background-color: black;
@@ -387,7 +388,7 @@ grid-template-areas:
     #project-wrapper {
     
         display: grid;
-        grid-column: 1fr 1fr 1fr;
+        grid-column: 1fr;
         grid-template-areas:
         "projects-header" 
         "project-left"
@@ -416,7 +417,7 @@ grid-template-areas:
         background-repeat:no-repeat;
         background-size: 100% 100%;
         grid-area: project-left;
-      
+       width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 6%;
@@ -587,7 +588,7 @@ grid-template-areas:
         background-repeat:no-repeat;
         background-size: 100% 100%;
         grid-area: project-left;
-      
+       
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 6%;
