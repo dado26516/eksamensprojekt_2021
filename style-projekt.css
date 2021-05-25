@@ -213,100 +213,9 @@ grid-template-areas:
  
  }
  
-/*mobile størrelse------------------------------------------*/
-@media screen and (max-width: 414px) {
-    .header-nav-wrapper {
-        display: grid;
-        grid-column: 1fr;
-        grid-template-areas: 
-        "header" "nav";
-        background-color: #1A2A37;
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-       
-    }
-    #about-wrapper {
-        display: grid;
-        grid-column:  1fr;
-    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
-    grid-template-areas: 
-    "picofme" "bodytext";
-    
-    }
 
-    #project-wrapper {
-    
-        display: grid;
-        grid-column: 1fr;
-        grid-template-areas:
-        "projects-header" 
-        "project-left" "uxui-main" "illustrator-left"
-        "three-left" "project-main" "project-right"
-        ;
-        background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
-        margin:auto;
-        text-align: center;
-        padding: 1% 10% 5% 10%;
-    
-    }
-    
-    .footer {
-        display: grid;   
-         background: rgb(26,42,55);
-         grid-column: 1fr;
-         grid-template-areas: 
-         "contact" "email" "linkedin" "linkedinlogo";
-         color: white;
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     
-     }
-     .menubar-name {
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-       }
-       .project-image {
-    grid-area: picofme;
-    margin-top: 20%;
-    margin-bottom: 10%;
-        height: 370px;
-       }
-       .contact {
-        grid-area: contact;
-        text-align: center;
-        margin-right: 20%;
-    }
-    
-    .email {
-        grid-area: email;
-        text-align: center;
-    }
-    
-    .phonenumber {
-        grid-area: phonenumber;
-        text-align: center;
-    }
-    
-    
-    
-    .linkedintext {
-        grid-area: linkedin;
-        text-align: center;
-      
-    }
-    
-    .linkedinlogo {
-        grid-area: linkedinlogo;
-        margin-top: 5%;
-        width:30px;
-        margin-left: 4%;
-       
-    
-    }
-}
 
-/*ipad størrelse------------------------------------------*/
+/*ipad pro størrelse------------------------------------------*/
 @media screen and (max-width: 1024px) {
     body {
         margin: 0;
@@ -525,3 +434,97 @@ grid-template-areas:
      }
 }
 
+/*mobile størrelse------------------------------------------*/
+@media screen and (max-width: 414px) {
+    .header-nav-wrapper {
+        display: grid;
+        grid-column: 1fr;
+        grid-template-areas: 
+        "header" "nav";
+        background-color: #1A2A37;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+       
+    }
+    #about-wrapper {
+        display: grid;
+        grid-column:  1fr;
+    background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100%);
+    grid-template-areas: 
+    "picofme" "bodytext";
+    
+    }
+
+    #project-wrapper {
+    
+        display: grid;
+        grid-column: 1fr;
+        grid-template-areas:
+        "projects-header" 
+        "project-left" "uxui-main" "illustrator-left"
+        "three-left" "project-main" "project-right"
+        ;
+        background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(255,135,210,1) 100%);
+        margin:auto;
+        text-align: center;
+        padding: 1% 10% 5% 10%;
+    
+    }
+    
+    .footer {
+        display: grid;   
+         background: rgb(26,42,55);
+         grid-column: 1fr;
+         grid-template-areas: 
+         "contact" "email" "linkedin" "linkedinlogo";
+         color: white;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+     }
+     .menubar-name {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+       }
+       .project-image {
+         grid-area: picofme;
+         margin-top: 50%;
+         margin-right: -20%;
+        height: 400px;
+        width: 300px;
+       }
+       .contact {
+        grid-area: contact;
+        text-align: center;
+        margin-right: 20%;
+    }
+    
+    .email {
+        grid-area: email;
+        text-align: center;
+    }
+    
+    .phonenumber {
+        grid-area: phonenumber;
+        text-align: center;
+    }
+    
+    
+    
+    .linkedintext {
+        grid-area: linkedin;
+        text-align: center;
+      
+    }
+    
+    .linkedinlogo {
+        grid-area: linkedinlogo;
+        margin-top: 5%;
+        width:30px;
+        margin-left: 4%;
+    }
+    .bodytext {
+        font-size: 10px;
+    }
+}
