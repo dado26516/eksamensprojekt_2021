@@ -268,7 +268,7 @@ background: linear-gradient(180deg, rgba(26,42,55,1) 0%, rgba(102,112,121,1) 100
 grid-template-areas: 
 "picofme bodytext bodytext";
 
-}
+} 
 
 .header_aboutme {
     color: white;
