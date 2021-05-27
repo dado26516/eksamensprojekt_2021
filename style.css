@@ -143,7 +143,6 @@ li a:hover {
     border-bottom: 2px solid #87DFFF;
 }
 
-
 #project-wrapper {
     
     display: grid;
@@ -370,7 +369,7 @@ grid-template-areas:
     }
     .header-nav-wrapper {
         display: grid;
-        grid-column: 1fr 1fr;
+        grid-row: 1fr 1fr;
         grid-template-areas: 
         "header nav";
         background-color: #1A2A37;
@@ -716,7 +715,7 @@ grid-template-areas:
         }
         .header-nav-wrapper {
             display: grid;
-            grid-column: 1fr;
+            grid-row: 1fr;
             grid-template-areas: 
             "header" "nav";
             background-color: #1A2A37;
@@ -728,7 +727,7 @@ grid-template-areas:
         #project-wrapper {
         
             display: grid;
-            grid-column: 1fr 1fr 1fr;
+            grid-row: 1fr;
             grid-template-areas:
             "projects-header" 
             "project-left"
@@ -845,7 +844,7 @@ grid-template-areas:
             grid-area: picofme;
             margin-top: 10%;
             margin-bottom: 10%;
-            margin-left: 19%;
+            margin-left: 15%;
             
             border: 2px solid #FF87D2;
             border-radius: 300px;
@@ -930,7 +929,7 @@ grid-template-areas:
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
-    margin-right: 13%;
+    margin-right: 18%;
 
 }
 
@@ -952,7 +951,7 @@ li a {
 .footer {
     display: grid;   
      background: rgb(26,42,55);
-     grid-column: 1fr 1fr;
+     grid-row: 1fr;
      grid-template-areas: 
      "contact contact" "email email" "linkedin linkedinlogo";
      color: white;
